@@ -21,7 +21,7 @@
 import sys
 
  # Import Qt modules
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui, QtWidgets
 
  # Import the compiled UI module
 from window import Ui_MainWindow
@@ -33,9 +33,9 @@ import lists
 
 
  # Create a class for our main window
-class Main(QtGui.QMainWindow):
+class Main(QtWidgets.QMainWindow):
     def __init__(self):
-        QtGui.QMainWindow.__init__(self)
+        QtWidgets.QMainWindow.__init__(self)
          # Iniciar main window
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -62,108 +62,61 @@ class Main(QtGui.QMainWindow):
         self.vLastIsHideFR = "0"
 
         #conectem coses Ruby
-        self.connect(self.ui.BotoUp, QtCore.SIGNAL('clicked()'),
-                    self.UpRuby)
-        self.connect(self.ui.BotoDown, QtCore.SIGNAL('clicked()'),
-                    self.DownRuby)
-        self.connect(self.ui.BotoRight, QtCore.SIGNAL('clicked()'),
-                    self.RightRuby)
-        self.connect(self.ui.BotoLeft, QtCore.SIGNAL('clicked()'),
-                    self.LeftRuby)
-        self.connect(self.ui.Botomirar, QtCore.SIGNAL('clicked()'),
-                    self.faceRuby)
-        self.connect(self.ui.Botoslow, QtCore.SIGNAL('clicked()'),
-                    self.slowRuby)
-        self.connect(self.ui.Botowalk, QtCore.SIGNAL('clicked()'),
-                    self.walkRuby)
-        self.connect(self.ui.Botorun, QtCore.SIGNAL('clicked()'),
-                    self.runRuby)
-        self.connect(self.ui.Botojump, QtCore.SIGNAL('clicked()'),
-                    self.jumpRuby)
+        self.ui.BotoUp.clicked.connect(self.UpRuby)
+        self.ui.BotoDown.clicked.connect(self.DownRuby)
+        self.ui.BotoRight.clicked.connect(self.RightRuby)
+        self.ui.BotoLeft.clicked.connect(self.LeftRuby)
+        self.ui.Botomirar.clicked.connect(self.faceRuby)
+        self.ui.Botoslow.clicked.connect(self.slowRuby)
+        self.ui.Botowalk.clicked.connect(self.walkRuby)
+        self.ui.Botorun.clicked.connect(self.runRuby)
+        self.ui.Botojump.clicked.connect(self.jumpRuby)
 
-        self.connect(self.ui.bSt1Ruby, QtCore.SIGNAL('clicked()'),
-                    self.st1Ruby)
-        self.connect(self.ui.bSt2Ruby, QtCore.SIGNAL('clicked()'),
-                    self.st2Ruby)
-        self.connect(self.ui.bSt3Ruby, QtCore.SIGNAL('clicked()'),
-                    self.st3Ruby)
-        self.connect(self.ui.bSt4Ruby, QtCore.SIGNAL('clicked()'),
-                    self.st4Ruby)
-        self.connect(self.ui.bHideRuby, QtCore.SIGNAL('clicked()'),
-                    self.hideRuby)
+        self.ui.bSt1Ruby.clicked.connect(self.st1Ruby)
+        self.ui.bSt2Ruby.clicked.connect(self.st2Ruby)
+        self.ui.bSt3Ruby.clicked.connect(self.st3Ruby)
+        self.ui.bSt4Ruby.clicked.connect(self.st4Ruby)
+        self.ui.bHideRuby.clicked.connect(self.hideRuby)
 
-        self.connect(self.ui.ClearRuby, QtCore.SIGNAL('clicked()'),
-                    self.RubyC)
-        self.connect(self.ui.backspaceRuby, QtCore.SIGNAL('clicked()'),
-                    self.GomaRuby)
-        self.connect(self.ui.bAlertRuby, QtCore.SIGNAL('clicked()'),
-                    self.alertRuby)
-        self.connect(self.ui.bQRuby, QtCore.SIGNAL('clicked()'),
-                    self.qRuby)
-        self.connect(self.ui.bLoveRuby, QtCore.SIGNAL('clicked()'),
-                    self.loveRuby)
-        self.connect(self.ui.bEndRuby, QtCore.SIGNAL('clicked()'),
-                    self.endRuby)
+        self.ui.ClearRuby.clicked.connect(self.RubyC)
+        self.ui.backspaceRuby.clicked.connect(self.GomaRuby)
+        self.ui.bAlertRuby.clicked.connect(self.alertRuby)
+        self.ui.bQRuby.clicked.connect(self.qRuby)
+        self.ui.bLoveRuby.clicked.connect(self.loveRuby)
+        self.ui.bEndRuby.clicked.connect(self.endRuby)
 
         #conectem coses FR
-        self.connect(self.ui.BotoUpFR, QtCore.SIGNAL('clicked()'),
-                    self.UpFR)
-        self.connect(self.ui.BotoDownFR, QtCore.SIGNAL('clicked()'),
-                    self.DownFR)
-        self.connect(self.ui.BotoRightFR, QtCore.SIGNAL('clicked()'),
-                    self.RightFR)
-        self.connect(self.ui.BotoLeftFR, QtCore.SIGNAL('clicked()'),
-                    self.LeftFR)
-        self.connect(self.ui.BotomirarFR, QtCore.SIGNAL('clicked()'),
-                    self.faceFR)
-        self.connect(self.ui.BotoxslowFR, QtCore.SIGNAL('clicked()'),
-                    self.xslowFR)
-        self.connect(self.ui.BotoslowFR, QtCore.SIGNAL('clicked()'),
-                    self.slowFR)
-        self.connect(self.ui.BotowalkFR, QtCore.SIGNAL('clicked()'),
-                    self.walkFR)
-        self.connect(self.ui.BotorunFR, QtCore.SIGNAL('clicked()'),
-                    self.runFR)
-        self.connect(self.ui.BotojumpFR, QtCore.SIGNAL('clicked()'),
-                    self.jumpFR)
+        self.ui.BotoUpFR.clicked.connect(self.UpFR)
+        self.ui.BotoDownFR.clicked.connect(self.DownFR)
+        self.ui.BotoRightFR.clicked.connect(self.RightFR)
+        self.ui.BotoLeftFR.clicked.connect(self.LeftFR)
+        self.ui.BotomirarFR.clicked.connect(self.faceFR)
+        self.ui.BotoxslowFR.clicked.connect(self.xslowFR)
+        self.ui.BotoslowFR.clicked.connect(self.slowFR)
+        self.ui.BotowalkFR.clicked.connect(self.walkFR)
+        self.ui.BotorunFR.clicked.connect(self.runFR)
+        self.ui.BotojumpFR.clicked.connect(self.jumpFR)
 
-        self.connect(self.ui.bSt1FR, QtCore.SIGNAL('clicked()'),
-                    self.st1FR)
-        self.connect(self.ui.bSt2FR, QtCore.SIGNAL('clicked()'),
-                    self.st2FR)
-        self.connect(self.ui.bSt3FR, QtCore.SIGNAL('clicked()'),
-                    self.st3FR)
-        self.connect(self.ui.bHideFR, QtCore.SIGNAL('clicked()'),
-                    self.hideFR)
+        self.ui.bSt1FR.clicked.connect(self.st1FR)
+        self.ui.bSt2FR.clicked.connect(self.st2FR)
+        self.ui.bSt3FR.clicked.connect(self.st3FR)
+        self.ui.bHideFR.clicked.connect(self.hideFR)
 
-        self.connect(self.ui.ClearFR, QtCore.SIGNAL('clicked()'),
-                    self.FRC)
-        self.connect(self.ui.backspaceFR, QtCore.SIGNAL('clicked()'),
-                    self.GomaFR)
-        self.connect(self.ui.bAlertFR, QtCore.SIGNAL('clicked()'),
-                    self.alertFR)
-        self.connect(self.ui.bAlert2FR, QtCore.SIGNAL('clicked()'),
-                    self.alert2FR)
-        self.connect(self.ui.bQFR, QtCore.SIGNAL('clicked()'),
-                    self.qFR)
-        self.connect(self.ui.bXFR, QtCore.SIGNAL('clicked()'),
-                    self.xFR)
-        self.connect(self.ui.bHappyFR, QtCore.SIGNAL('clicked()'),
-                    self.happyFR)
-        self.connect(self.ui.bEndFR, QtCore.SIGNAL('clicked()'), self.endFR)
-
+        self.ui.ClearFR.clicked.connect(self.FRC)
+        self.ui.backspaceFR.clicked.connect(self.GomaFR)
+        self.ui.bAlertFR.clicked.connect(self.alertFR)
+        self.ui.bAlert2FR.clicked.connect(self.alert2FR)
+        self.ui.bQFR.clicked.connect(self.qFR)
+        self.ui.bXFR.clicked.connect(self.xFR)
+        self.ui.bHappyFR.clicked.connect(self.happyFR)
+        self.ui.bEndFR.clicked.connect(self.endFR)
         #menu
-        self.connect(self.ui.actionAbout, QtCore.SIGNAL('triggered()'),
-                    self.aboutmsg)
-        self.connect(self.ui.actionRubyList, QtCore.SIGNAL('triggered()'),
-                    self.RList)
-        self.connect(self.ui.actionFRList, QtCore.SIGNAL('triggered()'),
-                    self.FRList)
+        self.ui.actionAbout.triggered.connect(self.aboutmsg)
+        self.ui.actionRubyList.triggered.connect(self.RList)
+        self.ui.actionFRList.triggered.connect(self.FRList)
         self.windowlist123 = None
-        self.connect(self.ui.actionUndo, QtCore.SIGNAL('triggered()'),
-                    self.undo)
-        self.connect(self.ui.actionRedo, QtCore.SIGNAL('triggered()'),
-                    self.redo)
+        self.ui.actionUndo.triggered.connect(self.undo)
+        self.ui.actionRedo.triggered.connect(self.redo)
 
 #-------------Up----------------
   #-------------Ruby----------------
@@ -436,9 +389,9 @@ class Main(QtGui.QMainWindow):
  #-------------Help----------------
   #-------------About----------------
     def aboutmsg(self):
-        QtGui.QMessageBox.about(self,
+        QtWidgets.QMessageBox.about(self,
                                 "About applymovement-gen",
-                                u"Applymovement-gen v2.0.0 \
+                                "Applymovement-gen v2.0.0 \
                                 \nCopyright © Jaume Delclos (cosarara97)")
 
  #-------------Tools----------------
@@ -493,14 +446,14 @@ def get_mov(game, vel, direction):
             return "'(Please select a velocity)\n"
         mov = lists.fr_list[vel][direction] + "\n"
     else:
-        print "Error asdf! Please tell cosarara97!"
+        print("Error asdf! Please tell cosarara97!")
     return mov
 
 
 #-------------List Window----------------
-class llista(QtGui.QWidget):
+class llista(QtWidgets.QWidget):
     def __init__(self):
-        QtGui.QWidget.__init__(self)
+        QtWidgets.QWidget.__init__(self)
         self.wlist = Ui_Form()
         self.wlist.setupUi(self)
 
@@ -508,7 +461,7 @@ class llista(QtGui.QWidget):
 # --- Main ---
 
 def main():
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window123 = Main()
     window123.show()
     sys.exit(app.exec_())
