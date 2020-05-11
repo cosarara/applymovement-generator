@@ -18,537 +18,248 @@
     <normaloff>applymovement-generator2.png</normaloff>applymovement-generator2.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_5">
-    <item>
-     <widget class="QTabWidget" name="tabWidget">
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <widget class="QWidget" name="Ruby">
-       <attribute name="title">
-        <string>R/S/E</string>
-       </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_7">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_2">
-            <item>
-             <widget class="QTextBrowser" name="textRuby">
-              <property name="html">
-               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+         <widget class="QTextBrowser" name="textRuby">
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="bAlertRuby">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>!</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bQRuby">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>?</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bLoveRuby">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>&lt;3</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bEndRuby">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>END</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="Botomirar">
+              <property name="text">
+               <string>Face</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
               </property>
              </widget>
             </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_3">
-              <item>
-               <widget class="QPushButton" name="bAlertRuby">
-                <property name="maximumSize">
-                 <size>
-                  <width>60</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>!</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="bQRuby">
-                <property name="maximumSize">
-                 <size>
-                  <width>60</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>?</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="bLoveRuby">
-                <property name="maximumSize">
-                 <size>
-                  <width>60</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>&lt;3</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="bEndRuby">
-                <property name="maximumSize">
-                 <size>
-                  <width>60</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>END</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
+            <item row="1" column="0">
+             <widget class="QRadioButton" name="Botoslow">
+              <property name="text">
+               <string>Slow</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QRadioButton" name="Botowalk">
+              <property name="text">
+               <string>Walk</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QRadioButton" name="Botorun">
+              <property name="text">
+               <string>Run</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QRadioButton" name="Botojump">
+              <property name="text">
+               <string>Jump</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QRadioButton" name="bSt1Ruby">
+              <property name="text">
+               <string>St1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QRadioButton" name="bSt3Ruby">
+              <property name="text">
+               <string>St3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QRadioButton" name="bSt4Ruby">
+              <property name="text">
+               <string>St4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QRadioButton" name="bSt2Ruby">
+              <property name="text">
+               <string>St2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QCheckBox" name="bHideRuby">
+              <property name="text">
+               <string>Hide</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_6">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout">
-              <item>
-               <layout class="QGridLayout" name="gridLayout_2">
-                <item row="0" column="0">
-                 <widget class="QRadioButton" name="Botomirar">
-                  <property name="text">
-                   <string>Face</string>
-                  </property>
-                  <property name="checked">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QRadioButton" name="Botoslow">
-                  <property name="text">
-                   <string>Slow</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="0">
-                 <widget class="QRadioButton" name="Botowalk">
-                  <property name="text">
-                   <string>Walk</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="0">
-                 <widget class="QRadioButton" name="Botorun">
-                  <property name="text">
-                   <string>Run</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="0">
-                 <widget class="QRadioButton" name="Botojump">
-                  <property name="text">
-                   <string>Jump</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="1">
-                 <widget class="QRadioButton" name="bSt1Ruby">
-                  <property name="text">
-                   <string>St1</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="1">
-                 <widget class="QRadioButton" name="bSt3Ruby">
-                  <property name="text">
-                   <string>St3</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="1">
-                 <widget class="QRadioButton" name="bSt4Ruby">
-                  <property name="text">
-                   <string>St4</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="1">
-                 <widget class="QRadioButton" name="bSt2Ruby">
-                  <property name="text">
-                   <string>St2</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="1">
-                 <widget class="QCheckBox" name="bHideRuby">
-                  <property name="text">
-                   <string>Hide</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QGridLayout" name="gridLayout">
-                <item row="0" column="1">
-                 <widget class="QPushButton" name="BotoUp">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Up</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QPushButton" name="BotoLeft">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Left</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="2">
-                 <widget class="QPushButton" name="BotoRight">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Right</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="1">
-                 <widget class="QPushButton" name="BotoDown">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Down</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="1">
-                 <widget class="QPushButton" name="ClearRuby">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Clear</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QPushButton" name="backspaceRuby">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>←</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-             </layout>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="1">
+             <widget class="QPushButton" name="BotoUp">
+              <property name="maximumSize">
+               <size>
+                <width>52</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Up</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="BotoLeft">
+              <property name="maximumSize">
+               <size>
+                <width>52</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Left</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QPushButton" name="BotoRight">
+              <property name="maximumSize">
+               <size>
+                <width>52</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Right</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="BotoDown">
+              <property name="maximumSize">
+               <size>
+                <width>52</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Down</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="ClearRuby">
+              <property name="maximumSize">
+               <size>
+                <width>52</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Clear</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="backspaceRuby">
+              <property name="maximumSize">
+               <size>
+                <width>52</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>←</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
          </layout>
         </item>
        </layout>
-      </widget>
-      <widget class="QWidget" name="tab">
-       <attribute name="title">
-        <string>FR/LG</string>
-       </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_10">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <layout class="QVBoxLayout" name="TextFR">
-            <item>
-             <widget class="QTextBrowser" name="textFR">
-              <property name="html">
-               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_6">
-              <item>
-               <widget class="QPushButton" name="bAlertFR">
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>!</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="bAlert2FR">
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>!!</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="bQFR">
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>?</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="bXFR">
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>X</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="bHappyFR">
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>^^</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="bEndFR">
-                <property name="maximumSize">
-                 <size>
-                  <width>60</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>END</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_8">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_9">
-              <item>
-               <layout class="QGridLayout" name="gridLayout_3">
-                <item row="1" column="1">
-                 <widget class="QRadioButton" name="bSt1FR">
-                  <property name="text">
-                   <string>St1</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="1">
-                 <widget class="QRadioButton" name="bSt2FR">
-                  <property name="text">
-                   <string>St2</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="1">
-                 <widget class="QRadioButton" name="bSt3FR">
-                  <property name="text">
-                   <string>St3</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="1">
-                 <widget class="QRadioButton" name="BotojumpFR">
-                  <property name="text">
-                   <string>Jump</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QRadioButton" name="BotomirarFR">
-                  <property name="text">
-                   <string>Face</string>
-                  </property>
-                  <property name="checked">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QRadioButton" name="BotoxslowFR">
-                  <property name="text">
-                   <string>Very Slow</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="0">
-                 <widget class="QRadioButton" name="BotoslowFR">
-                  <property name="text">
-                   <string>Slow</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="0">
-                 <widget class="QRadioButton" name="BotowalkFR">
-                  <property name="text">
-                   <string>Walk</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="0">
-                 <widget class="QRadioButton" name="BotorunFR">
-                  <property name="text">
-                   <string>Run</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="1">
-                 <widget class="QCheckBox" name="bHideFR">
-                  <property name="text">
-                   <string>Hide</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QGridLayout" name="gridLayout_6">
-                <item row="0" column="1">
-                 <widget class="QPushButton" name="BotoUpFR">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Up</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QPushButton" name="BotoLeftFR">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Left</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="2">
-                 <widget class="QPushButton" name="BotoRightFR">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Right</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="1">
-                 <widget class="QPushButton" name="BotoDownFR">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Down</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QPushButton" name="backspaceFR">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>←</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="1">
-                 <widget class="QPushButton" name="ClearFR">
-                  <property name="maximumSize">
-                   <size>
-                    <width>52</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Clear</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-     </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
