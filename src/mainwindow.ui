@@ -283,7 +283,6 @@ p, li { white-space: pre-wrap; }
      <string>Tools</string>
     </property>
     <addaction name="actionRubyList"/>
-    <addaction name="actionFRList"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -304,7 +303,7 @@ p, li { white-space: pre-wrap; }
   </action>
   <action name="actionRubyList">
    <property name="text">
-    <string>Ruby List</string>
+    <string>Text List</string>
    </property>
   </action>
   <action name="actionAbout">
