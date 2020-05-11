@@ -1,0 +1,24 @@
+{
+  "mainFile": "Main.py", 
+  "venv": "", 
+  "name": "Applymovement-gen-2.0", 
+  "license": "GNU General Public License v3", 
+  "url": "", 
+  "pythonPath": "python", 
+  "preExecScript": "", 
+  "programParams": "", 
+  "supported-extensions": [
+    ".py", 
+    ".html", 
+    ".jpg", 
+    ".png", 
+    ".ui", 
+    ".css", 
+    ".json", 
+    ".ini", 
+    ".txt"
+  ], 
+  "project-type": "", 
+  "postExecScript": "", 
+  "description": ""
+}

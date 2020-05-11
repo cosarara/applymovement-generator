@@ -1,0 +1,68 @@
+Applymovement-gen
+Versió: 2.0.0
+Escrito por Jaume Delclòs Coll (cosarara97)
+Copyright © (C) 2011 Jaume Delclòs Coll
+
+
+-----------------------------------------------
+Dependencias:
+- Python
+- PyQt4 (El paquete normalmente se llama "python-qt4")
+- Qt4 (Normalmente se instala con PyQt4)
+NOTA: Si se usa un ejecutable, no son necesarias ninguna de las anteriores dependencias.
+
+
+-----------------------------------------------
+Como ejecutar:
+- En Linux:
+Opción 1: Ejecutar Main.py
+Opción 2: Des de terminal: 
+$ python Main.py
+
+- En windows:
+Opción 1: Abrir main.py con python
+Opción 2: Ejecutar build/movgen0852.exe
+
+- En Mac:
+Ojojojo (ni idea, no tengo mac)
+
+-----------------------------------------------
+Changelog:
+
+v2.0.0
+Casi todo el programa reescrito, codigo limpiado
+Mejorado el sistema de undo/redo
+Añadido scroll automático
+Quitado banner estúpido
+
+v1.0.5
+Añadido botón FE, Hide/Show mejorado y bugfix
+
+v1.0.1
+Añadida imagen del título
+
+v1.0.0
+Añadidas velocidades de salto en el sitio (Step on the spot) y función de ocultar/mostrar mini.
+
+v0.9.0
+Añadidos simbolos (?,!,!!,^^,<3,X)
+
+v0.8.5.2
+Añadido el icono
+
+v0.8.5
+Añadido Botón backspace (←)
+Añadida función undo/redo
+
+v0.8.0
+Añadidas listas de movimientos
+Diseño Mejorado
+Ruby i Emerald en la misma pestaña
+
+v0.5.0
+Primera versión, usable però con mal aspecto xD
+
+-----------------------------------------------
+
+
+

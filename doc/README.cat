@@ -1,0 +1,68 @@
+Applymovement-gen
+Versió: 2.0.0
+Escrit per Jaume Delclòs Coll (cosarara97)
+Copyright © (C) 2011 Jaume Delclòs Coll
+
+
+-----------------------------------------------
+Dependències:
+- Python
+- PyQt4 (El paquet normalment s'anomena "python-qt4")
+- Qt4 (Normalment s'instal·la amb PyQt4)
+NOTA: Si es fa servir un executable, no son necessàries cap de les anteriors dependències.
+
+
+-----------------------------------------------
+Com executar:
+- En Linux:
+Opció 1: Executar Main.py
+Opció 2: Des de terminal: 
+$ python Main.py
+
+- En windows:
+Opció 1: Obrir main.py amb python
+Opció 2: Utilitzar un executable =P
+
+- En Mac:
+Ojojojo (ni idea, no tinc mac, pero segurament les instruccions de Linux serveixen)
+
+-----------------------------------------------
+Changelog:
+
+v2.0.0
+Practicament tot el programa reescrit, codi netejat
+Millorat el sistema d'undo/redo
+Afegit scroll automatic
+Tret banner estúpid
+
+v1.0.5
+Afegit botó FE, Hide/Show  millorat i bugfix
+
+v1.0.1
+Afegida imatge del títol
+
+v1.0.0
+Afegides velocitats de salt en el lloc (Step on the spot) i funció d'ocultar/mostrar mini.
+
+v0.9.0
+Afegits simbols (?,!,!!,^^,<3,X)
+
+v0.8.5.2
+Afegida la icona
+
+v0.8.5
+Afegit Botó backspace (←)
+Afegida funció undo/redo
+
+v0.8.0
+Afegides llistes de moviments
+Diseny millorat
+Ruby i Emerald a la mateixa pestanya
+
+v0.5.0
+Primera versió, usable però amb mal aspecte xD
+
+-----------------------------------------------
+
+
+
